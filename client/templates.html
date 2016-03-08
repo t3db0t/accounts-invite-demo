@@ -12,3 +12,31 @@
 	<h1>Thanks for your interest in this app!</h1>
     {{> inviteLogin token=token}}
 </template>
+
+<!-- Templates for use with Accounts-Invite -->
+
+<template name="inviteLogin">
+	{{> Template.dynamic template=inviteStatus}}
+</template>
+
+<template name="inviteRequested">
+	You've requested an invite. We'll let you know when your invite is ready!
+</template>
+
+<template name="inviteInvited">
+	You're invited! Log in with any of these services:
+	{{>loginButtons}}
+</template>
+
+<template name="inviteVisited">
+	You're invited! Log in with any of these services:
+	{{>loginButtons}}
+</template>
+
+<template name="inviteClaimed">
+	You've claimed your invitation.  Return <a href="/">home</a>.
+</template>
+
+<template name="inviteInvalid">
+	Sorry, this is an invalid invitation.
+</template>
