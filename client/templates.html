@@ -8,17 +8,6 @@
 	<p>Notice that login buttons are provided at this public route.  Users who have created an account using an invitation token will be able to login here like any normal app. However, users who have not done this will <strong>not</strong> be able to login OR create accounts.</p>
 </template>
 
-<!-- <template name="acceptInvite">
-	<h1>Thanks for your interest in this app!</h1>
-    {{> inviteLogin token=token}}
-</template> -->
-
-<!-- Templates for use with Accounts-Invite -->
-
-<!-- <template name="inviteLogin">
-	{{> Template.dynamic template=inviteStatus}}
-</template> -->
-
 <template name="invite-valid">
 	You're invited! Log in with any of these services:
 	{{>loginButtons}}

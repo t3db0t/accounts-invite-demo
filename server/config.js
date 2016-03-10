@@ -9,7 +9,5 @@ function validateToken(token){
 }
 
 function onCreatedAccount(token){
-	// Update user's invitation status to "claimed"
-    console.log("--> claiming invite");
 	InvitesCollection.update({"token":token}, {$set:{"status":"claimed"}});
 }
