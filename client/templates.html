@@ -4,8 +4,20 @@
 
 <template name="home">
 	{{>loginButtons}}
-	<h1>Home</h1>
+	<h1>Accounts-Invites Demo</h1>
+	<p>Don't you wish you could validate account creation in Meteor more flexibly? <a href="https://github.com/t3db0t/meteor-accounts-invite">t3db0t:accounts-invite</a> is a login validation extension for Meteor that supports OAuth services, not just accounts-password, and provides basic anonymous account functionality.  Coupled with <a href="https://github.com/t3db0t/meteor-invites">t3db0t:invites</a>, an invitation manager, we can quickly and easily create a fully-featured beta invitations and control system.</p>
+
+	<h2>OK, how does it work?</h2>
 	<p>Notice that login buttons are provided at this public route.  Users who have created an account using an invitation token will be able to login here like any normal app. However, users who have not done this will <strong>not</strong> be able to login OR create accounts.</p>
+
+	<p>Now check out the <a href="/invites">Invitations</a> page. Create yourself an invitation, then click on the token to visit the acceptInvite page, where you will be allowed to create an account.</p>
+
+	<h2>Learn More:</h2>
+	<p><ul>
+		<li><strong><a href="https://github.com/t3db0t/accounts-invite-demo">accounts-invite-demo</a>:</strong> The source for this demonstration</li>
+		<li><strong><a href="https://github.com/t3db0t/meteor-accounts-invite">t3db0t:accounts-invite</a>:</strong> Account validation with oauth and anonymous user support</li>
+		<li><strong><a href="https://github.com/t3db0t/meteor-invites">t3db0t:invites</a>:</strong> An invitation management system</li>
+	</ul></p>
 </template>
 
 <template name="invite-valid">

@@ -1,5 +1,7 @@
 # accounts-invite-demo
 
+Live demo: http://accounts-invite-demo.meteor.com/
+
 Many apps will want a way to control user account creation, for instance during a beta testing phase.  This demonstrates a powerful way to do this with the ['t3db0t:accounts-invite'](https://github.com/t3db0t/meteor-accounts-invite) (account validation) and [`t3db0t:invites`](https://github.com/t3db0t/meteor-invites) (beta invitations) packages.
 
 ## How to use the demo
